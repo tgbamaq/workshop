@@ -3,8 +3,10 @@ html
     head
         include ../components/head.pug
     body
+        - const posts = require("../post.json");
         block header
             include ../components/header.pug
+            include ../components/banner.pug
         block content
             h1 My Site
             p Welcome to my super lame site.

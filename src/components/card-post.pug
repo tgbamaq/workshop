@@ -1,0 +1,10 @@
+div.post-preview.bg-primary
+	img(src=`https://picsum.photos/id/37${post.id}/600/200`, alt="", srcset="")
+	a(href='post.html')
+		h2.post-title=post.title
+	p.post-subtitle
+		=post.body
+	p.post-meta
+		a(href='#!') Start Bootstrap
+			=post.userId
+hr.my-4
